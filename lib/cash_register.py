@@ -18,14 +18,11 @@ class CashRegister:
             print("There is no discount to apply.")
 
   def get_item_price(self, item):
-        # Define item prices within the class
+      
         prices = {
             "apple": 0.99,
             "tomato": 1.76,
-            # Add more item prices as needed
         }
-
-        # Retrieve the price of the item from the prices dictionary
         return prices.get(item, 0)
 
   def void_last_transaction(self):
